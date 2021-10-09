@@ -20,6 +20,7 @@ class Main extends PluginBase implements Listener{
     @mkdir($this->getDataFolder());
     $this->saveDefaultConfig();
     $this->getResource("config.yml");
+    $this->getServer()->getPluginManager()->registerEvents($this, $this);
     $this->getLogger()->info("You are now ready to ste- I mean copy inventories.");
   }
   
