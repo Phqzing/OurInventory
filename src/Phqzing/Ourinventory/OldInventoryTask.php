@@ -1,6 +1,6 @@
 <?php
 
-namespace Phqzing\OurInventory;
+namespace Phqzing\Ourinventory;
 
 use pocketmine\scheduler\Task;
 use pocketmine\Player;
