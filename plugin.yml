@@ -1,0 +1,14 @@
+name: OurInventory
+api: 3.0.0
+version: 0.0.1
+author: Phqzing
+main: Phqzing\OurInventory\Main
+
+commands:
+ copyinventory:
+  description: "copy someones inventory."
+  aliases: [copyinv, ci]
+  
+ getoldinventory:
+  description: "get your old inventory back."
+  aliases: [getoi, goi]
