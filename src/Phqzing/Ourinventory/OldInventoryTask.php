@@ -8,7 +8,7 @@ use pocketmine\utils\TextFormat as TE;
 
 class OldInventoryTask extends Task {
   
-  private $plugin;
+  public $plugin;
   private $player;
   
   private $time;
