@@ -1,6 +1,6 @@
 <?php
 
-namespace Phqzing\OurInventory;
+namespace Phqzing\Ourinventory;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\Player;
@@ -91,5 +91,11 @@ class Main extends PluginBase implements Listener{
       break;
     }
     return true;
+  }
+  
+  public function onQuit(PlayerQuitEvent $ev){
+    $player = $ev->getPlayer();
+    unset($this->oldinv[$player->getName()]);
+    unset($this->oldarmor[$player->getName()]);
   }
 }
